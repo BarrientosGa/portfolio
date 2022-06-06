@@ -6,15 +6,15 @@ import MenuIcon from '@mui/icons-material/Menu';
 const NavBar = () => {
   return (
     <Box>
-    <AppBar position="static">
+    <AppBar position="static" color='navBar'>
       <Toolbar>
         <Typography variant="h6" component="div">
           Logo
         </Typography>
-        <Button id='inicio' color="inherit">Home</Button>
-        <Button id='tecnologías' color="inherit">Tecnologías</Button>
-        <Button id='proyectos' color="inherit">Proyectos</Button>
-        <Button id='contacto' color="inherit">Contacto</Button>
+        <Button id='inicio'>Home</Button>
+        <Button id='tecnologías'>Tecnologías</Button>
+        <Button id='proyectos'>Proyectos</Button>
+        <Button id='contacto'>Contacto</Button>
       </Toolbar>
     </AppBar>
   </Box>

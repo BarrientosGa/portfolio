@@ -4,16 +4,20 @@ import Technology from './components/Technology/Technology';
 import Project from './components/Project/Project';
 import Contact from './components/Contact/Contact';
 import NavBar from './components/NavBar/NavBar';
+import { Box, ThemeProvider } from '@mui/material';
+import { theme } from './theme';
 
 const App = () => {
   return (
-    <>
-      <NavBar />
-      <Home />
-      <Technology />
-      <Project />
-      <Contact />
-    </>
+    <ThemeProvider theme={theme}>
+      <Box >
+        <NavBar />
+        <Home />
+        <Technology />
+        <Project />
+        <Contact />
+      </Box>
+    </ThemeProvider>
   )
 }
 

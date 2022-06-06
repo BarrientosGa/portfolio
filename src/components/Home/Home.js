@@ -6,10 +6,10 @@ const Home = () => {
   return (
     <>
       <Box>
-        <Typography variant="h2" color="initial">
+        <Typography variant="h2" color="primary">
           Hola ♥ {/* poner un icon */}
         </Typography>
-        <Typography variant="h5" component='p' color="initial">
+        <Typography /* variant="h5" */ component='p' color="secondary" >
           info personal
         </Typography>
       </Box>

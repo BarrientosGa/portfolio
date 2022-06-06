@@ -5,7 +5,7 @@ import {Typography, Card, CardContent,CardActions, Button} from '@mui/material'
 const Project = () => {
   return (
     <>
-        <Typography variant="h4" color="initial">
+        <Typography variant="h4" color="primary">
           PROJECTOS
         </Typography>
 
@@ -23,7 +23,7 @@ const Project = () => {
         </Typography>
       </CardContent>
       <CardActions>
-        <Button size="small" variant='contained'>Ver código</Button>
+        <Button size="small" variant='contained' color='button'>Ver código</Button>
       </CardActions>
     </Card>
     </>

@@ -5,7 +5,7 @@ import {Typography} from '@mui/material'
 const Technology = () => {
   return (
     <>
-        <Typography variant="h4" color="initial">
+        <Typography variant="h4" color="primary">
           TECNOLOGÍAS
         </Typography>
         <p>aca se van a mapear las diferentes tecnologias</p>
