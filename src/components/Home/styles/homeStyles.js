@@ -9,7 +9,7 @@ export const useStyles = makeStyles((theme) => ({
     img: {
         width: '250px',
         height: '250px',
-        marginTop: '40px'
+        marginTop: '40px',
     },
     boxText: {
         //border: '1px solid red',
