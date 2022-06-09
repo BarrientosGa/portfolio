@@ -1,24 +1,56 @@
 import React from 'react'
-import './contactStyles.css'
-import Typography from '@mui/material/Typography'
-import { Button } from '@mui/material'
+import { useStyles } from './styles/contactStyles'
+import { Box, Button, Container, TextField, Typography } from '@mui/material'
 
 const Contact = () => {
+
+  const classes = useStyles()
+
   return (
     <>
-      {/* formik */}
-      <Typography variant="h3" color="primary">
-        Contacto
+
+      <Typography variant="h3" color="primary" className={classes.alignTitle}>
+        CONTACTO
       </Typography>
-      <p>icons de redes sociales</p>
-      {/* al tocar uno se abre abajo con la info */}
-      <form>
-        <input type="text" />
-        <input type="text" />
-        <input type="text" />
-        <Button variant='contained' color='button'>Enviar</Button>
-      </form>
-      <footer>aca ira contenido de footer</footer>
+      <Container className={classes.container}>
+        <Box component='form' action="mailto:gabrielbarrientos729@gmail.com" method="post" className={classes.form}>
+          <TextField
+            id="standard-basic"
+            label="Nombre"
+            variant="standard"
+            fullWidth
+            className={classes.textField} />
+          <TextField
+            id="standard-basic"
+            label="Apellido"
+            variant="standard"
+            fullWidth
+            className={classes.textField}
+          />
+          <TextField
+            id="standard-basic"
+            label="Email"
+            variant="standard"
+            fullWidth
+            className={classes.textField}
+          />
+          <TextField
+            id="standard-basic"
+            fullWidth
+            multiline
+            rows={4}
+            variant='standard'
+            defaultValue="Escribe tu mensaje"
+            className={classes.textField}
+          />
+          <Button variant='contained' color='button'>Enviar</Button>
+        </Box>
+      </Container>
+      <Box component='footer' sx={{ color: 'white', margin: '30px' }}>
+        <Typography component='p'>
+          &copy; Copyright 2022 | Gabriel Barrientos
+        </Typography>
+      </Box>
     </>
   )
 }

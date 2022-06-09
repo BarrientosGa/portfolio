@@ -15,7 +15,7 @@ const App = () => {
         <Home />
         <Technology />
         <Project />
-        {/* <Contact /> */}
+        <Contact />
       </Box>
     </ThemeProvider>
   )
