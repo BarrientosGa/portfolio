@@ -1,6 +1,6 @@
 import React from 'react'
 import { useStyles } from '../styles/navBarStyles';
-import { Box, AppBar, Toolbar, Typography, Button } from '@mui/material';
+import { Box, AppBar, Toolbar, Typography, Button, Link } from '@mui/material';
 
 const NavBarDesktop = () => {
 
@@ -8,7 +8,7 @@ const NavBarDesktop = () => {
 
     return (
         <Box>
-            <AppBar position="static" color='navBar'>
+            <AppBar position="fixed" color='navBar'>
                 <Toolbar>
                     <Box>
                         <Typography variant="h6">
@@ -16,13 +16,19 @@ const NavBarDesktop = () => {
                         </Typography>
                     </Box>
                     <Box className={classes.boxButtonNav}>
-                        <Button id='inicio'>Home</Button>
-                        <Button id='tecnologías'>Tecnologías</Button>
-                        <Button id='proyectos'>Proyectos</Button>
-                        <Button id='contacto'>Contacto</Button>
+                        <Link href='#tecnologías' sx={{ textDecoration: 'none' }}>
+                            <Button id='#tecnologías'>Tecnologías</Button>
+                        </Link>
+                        <Link href='#proyectos' sx={{ textDecoration: 'none' }}>
+                            <Button id='#proyectos'>Proyectos</Button>
+                        </Link>
+                        <Link href='#contacto' sx={{ textDecoration: 'none' }}>
+                            <Button id='#contacto'>Contacto</Button>
+                        </Link>
                     </Box>
                 </Toolbar>
             </AppBar>
+            <Toolbar/>
         </Box>
     )
 }

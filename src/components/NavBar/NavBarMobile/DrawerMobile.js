@@ -1,4 +1,4 @@
-import { Box, Divider, Drawer, List, ListItem, ListItemButton, ListItemText } from '@mui/material'
+import { Box, Button, Divider, Drawer, Link, List, ListItem, ListItemButton, ListItemText } from '@mui/material'
 import React from 'react'
 import { useStyles } from '../styles/navBarStyles';
 
@@ -18,14 +18,12 @@ const DrawerMobile = ({setOpen, open}) => {
           className={classes.boxButtonNav}
           sx={{backgroundColor: 'navBar.main', color: 'primary.main'}}
         >
-          <List>
+          <List className={classes.list}>
             {/* modificar esto despues y agregarle los id a los botones */}
-            {['Home', 'Tecnologías', 'Proyectos', 'Contacto'].map((text, index) => (
-              <ListItem key={index}>
-                <ListItemButton>
-                  <ListItemText primary={text} />
-                </ListItemButton>
-              </ListItem>
+            {['Tecnologías', 'Proyectos', 'Contacto'].map((text, index) => (
+              <Link href={`#${text.toLowerCase()}`} key={index} className={classes.link}>
+                <Button>{text}</Button>
+              </Link>
             ))}
           </List>
           <Divider />

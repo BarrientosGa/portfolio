@@ -5,7 +5,7 @@ export const useStyles = makeStyles((theme) =>({
         display: 'flex',
     },
     boxButtonNav : {
-        width: '100%',
+        width: '90%',
         display: 'flex',
         justifyContent: 'center',
         alignItems: "center",
@@ -18,5 +18,13 @@ export const useStyles = makeStyles((theme) =>({
         width: '100%',
         display: 'flex',
         justifyContent: 'flex-end'
+    },
+    list:{
+        display:'flex', 
+        flexDirection:'column', 
+        margin: '20px',
+    },
+    link:{
+        textDecoration: 'none !important'
     }
 }))

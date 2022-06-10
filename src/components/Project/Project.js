@@ -1,5 +1,5 @@
 import React from 'react'
-import { Typography, Container, Grid } from '@mui/material'
+import { Typography, Container, Grid, Box, Toolbar } from '@mui/material'
 import { useStyles } from './styles/projectsStyles'
 import { motion } from "framer-motion"
 import CardProject from './Card/CardProject'
@@ -64,7 +64,8 @@ const Project = () => {
   const classes = useStyles()
 
   return (
-    <>
+    <Box id='proyectos'>
+      <Toolbar/>
       <DividerComp title='PROJECTOS' />
       <Container>
         <Grid container className={classes.gridContainer} spacing={3} justifyContent='center' rowGap={2}>
@@ -77,7 +78,7 @@ const Project = () => {
           ))}
         </Grid>
       </Container>
-    </>
+    </Box>
   )
 }
 
