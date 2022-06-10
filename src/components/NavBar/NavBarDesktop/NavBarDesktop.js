@@ -22,9 +22,6 @@ const NavBarDesktop = () => {
                         <Link href='#proyectos' sx={{ textDecoration: 'none' }}>
                             <Button id='#proyectos'>Proyectos</Button>
                         </Link>
-                        <Link href='#contacto' sx={{ textDecoration: 'none' }}>
-                            <Button id='#contacto'>Contacto</Button>
-                        </Link>
                     </Box>
                 </Toolbar>
             </AppBar>

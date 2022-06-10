@@ -20,7 +20,7 @@ const DrawerMobile = ({setOpen, open}) => {
         >
           <List className={classes.list}>
             {/* modificar esto despues y agregarle los id a los botones */}
-            {['Tecnologías', 'Proyectos', 'Contacto'].map((text, index) => (
+            {['Tecnologías', 'Proyectos'].map((text, index) => (
               <Link href={`#${text.toLowerCase()}`} key={index} className={classes.link}>
                 <Button>{text}</Button>
               </Link>
