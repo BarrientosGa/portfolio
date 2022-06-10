@@ -1,6 +1,7 @@
 import React from 'react'
 import { useStyles } from './styles/contactStyles'
 import { Box, Button, Container, TextField, Typography } from '@mui/material'
+import DividerComp from '../../Share/Divider/DividerComp'
 
 const Contact = () => {
 
@@ -8,10 +9,7 @@ const Contact = () => {
 
   return (
     <>
-
-      <Typography variant="h3" color="primary" className={classes.alignTitle}>
-        CONTACTO
-      </Typography>
+      <DividerComp title='CONTACTO' />
       <Container className={classes.container}>
         <Box component='form' action="mailto:gabrielbarrientos729@gmail.com" method="post" className={classes.form}>
           <TextField

@@ -1,8 +1,9 @@
 import React from 'react'
-import { Typography, Container, Grid} from '@mui/material'
+import { Typography, Container, Grid } from '@mui/material'
 import { useStyles } from './styles/projectsStyles'
 import { motion } from "framer-motion"
 import CardProject from './Card/CardProject'
+import DividerComp from '../../Share/Divider/DividerComp'
 
 const projects = [
   {
@@ -64,9 +65,7 @@ const Project = () => {
 
   return (
     <>
-      <Typography variant="h3" color="primary" className={classes.alignTitle}>
-        PROJECTOS
-      </Typography>
+      <DividerComp title='PROJECTOS' />
       <Container>
         <Grid container className={classes.gridContainer} spacing={3} justifyContent='center' rowGap={2}>
           {projects.map(({ id, ...props }) => (
