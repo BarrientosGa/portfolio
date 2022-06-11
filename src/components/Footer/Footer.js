@@ -1,18 +1,21 @@
 import React from 'react'
 import { useStyles } from './styles/footerStyles'
-import { Box, Button, Container, TextField, Toolbar, Typography } from '@mui/material'
-import DividerComp from '../../Share/Divider/DividerComp'
+import { Box, Toolbar, Typography, useMediaQuery } from '@mui/material'
+import SocialNetworkFloat from '../SocialNetwork/SocialNetworkFloat'
 
 const Footer = () => {
 
   const classes = useStyles()
 
+  const hidden = useMediaQuery(theme => theme.breakpoints.down('lg'));
+
   return (
-    <Box component='footer' sx={{ color: 'white', margin: '30px' }}>
-      <Typography component='p'>
+    <Box component='footer' className={classes.footer}>
+      <SocialNetworkFloat />
+      <Typography component='p' sx={{ marginTop: '30px' }}>
         &copy; Copyright 2022 | Gabriel Barrientos
       </Typography>
-      <Toolbar />
+      {hidden && <Toolbar />}
     </Box>
   )
 }

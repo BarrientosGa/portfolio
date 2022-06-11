@@ -26,5 +26,8 @@ export const useStyles = makeStyles((theme) =>({
     },
     link:{
         textDecoration: 'none !important'
+    },
+    'MuiPaper-root-MuiDrawer-paper':{
+        backgroundColor:'none'
     }
 }))

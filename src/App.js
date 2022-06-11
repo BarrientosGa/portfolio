@@ -13,7 +13,7 @@ const App = () => {
     <ThemeProvider theme={theme}>
       <Box >
         <NavBar />
-        <SocialNetworkFloat/>
+        {/* <SocialNetworkFloat/> */}
         <Home />
         <Technology />
         <Project />

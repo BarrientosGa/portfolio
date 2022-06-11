@@ -10,6 +10,13 @@ export const useStyles = makeStyles({
         right: 0,
         bottom: 0,
         padding: '16px',
-        margin: '15px'
+        margin: '15px',
+    },
+    box_mobile :{
+        display: 'flex',
+        marginTop:'40px',
+        '& a':{
+            padding: '5px'
+        }
     },
 })

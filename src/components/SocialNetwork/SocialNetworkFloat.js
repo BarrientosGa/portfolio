@@ -1,5 +1,5 @@
 import React from 'react'
-import { Box, Link } from '@mui/material'
+import { Box, Link, useMediaQuery } from '@mui/material'
 import { GitHub, LinkedIn, Email } from '@mui/icons-material';
 import { useStyles } from './styles/socialNetWorkStyles';
 
@@ -22,14 +22,16 @@ const redes = [
 const SocialNetworkFloat = () => {
     const classes = useStyles()
 
+    const hidden = useMediaQuery(theme => theme.breakpoints.down('lg'));
+
+
     return (
-        <Box className={classes.box_container}>
+        <Box className={hidden ? classes.box_mobile : classes.box_container }>
             {redes.map(({ redSocial, link, email }) => (
                 <Link href={link !== undefined ? link : `mailto:${email}`} target='_blank'>
                     {redSocial}
                 </Link>
             ))}
-
         </Box>
     )
 }
