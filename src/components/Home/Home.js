@@ -1,13 +1,16 @@
 import React from 'react'
 import { useStyles } from './styles/homeStyles'
-import { Typography, Grid, Container } from '@mui/material'
+import { Typography, Grid, Box, Fab, Toolbar } from '@mui/material'
+import ScrollTop from '../ScrollTop/ScrollTop'
+import KeyboardArrowUpIcon from '@mui/icons-material/KeyboardArrowUp';
 
-const Home = () => {
+const Home = (props) => {
 
   const classes = useStyles()
 
   return (
-      <Grid container className={classes.gridContainer}>
+    <Box id='inicio'>
+      <Grid container className={classes.gridContainer} id="back-to-top-anchor">
         <Grid item lg={5} md={6} sm={8} className={classes.boxText} zeroMinWidth>
           <Typography variant="h3" color="primary" sx={{ marginBottom: '20px' }} >
             BIENVENIDO/A👋
@@ -20,6 +23,12 @@ const Home = () => {
           <img src="./developer.png" alt="imagen developer home" className={classes.img} />
         </Grid>
       </Grid>
+      <ScrollTop {...props}>
+        <Fab size="small" aria-label="scroll back to top">
+          <KeyboardArrowUpIcon />
+        </Fab>
+      </ScrollTop>
+    </Box>
   )
 }
 

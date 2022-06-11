@@ -16,16 +16,17 @@ const NavBarDesktop = () => {
                         </Typography>
                     </Box>
                     <Box className={classes.boxButtonNav}>
-                        <Link href='#tecnologías' sx={{ textDecoration: 'none' }}>
-                            <Button id='#tecnologías'>Tecnologías</Button>
-                        </Link>
-                        <Link href='#proyectos' sx={{ textDecoration: 'none' }}>
-                            <Button id='#proyectos'>Proyectos</Button>
-                        </Link>
+                        {['Inicio', 'Tecnologías', 'Proyectos'].map((text, index) => (
+                            <Link href={`#${text.toLowerCase()}`} key={index} sx={{ textDecoration: 'none' }}>
+                                <Button>
+                                    {text}
+                                </Button>
+                            </Link>
+                        ))}
                     </Box>
                 </Toolbar>
             </AppBar>
-            <Toolbar/>
+            <Toolbar />
         </Box>
     )
 }

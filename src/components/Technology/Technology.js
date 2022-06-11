@@ -1,8 +1,8 @@
 import React from 'react'
 import { useStyles } from './styles/technologyStyles'
-import { Grid, Typography, Container, Divider, Box, Toolbar } from '@mui/material'
+import { Grid, Container, Box, Toolbar } from '@mui/material'
 import { motion } from "framer-motion"
-import DividerComp from '../../Share/Divider/DividerComp'
+import DividerComp from '../Share/Divider/DividerComp'
 
 
 const logos = [
@@ -43,7 +43,7 @@ const Technology = () => {
 
   return (
     <Box id='tecnologías'>
-      <Toolbar/>
+      <Toolbar />
       <DividerComp title='TECNOLOGÍAS' />
       <Container sx={{ display: 'flex', justifyContent: 'center' }}>
         <Grid container spacing={3} lg={3} md={4} sm={2} className={classes.gridContainer} justifyContent='flex-start'>

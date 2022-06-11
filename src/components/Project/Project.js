@@ -1,9 +1,9 @@
 import React from 'react'
-import { Typography, Container, Grid, Box, Toolbar } from '@mui/material'
+import {Container, Grid, Box, Toolbar } from '@mui/material'
 import { useStyles } from './styles/projectsStyles'
 import { motion } from "framer-motion"
 import CardProject from './Card/CardProject'
-import DividerComp from '../../Share/Divider/DividerComp'
+import DividerComp from '../Share/Divider/DividerComp'
 
 const projects = [
   {
