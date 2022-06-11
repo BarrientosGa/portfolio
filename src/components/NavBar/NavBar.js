@@ -11,7 +11,7 @@ const NavBar = () => {
 
   return (
     <>
-      {hidden ? <NavBarMobile setOpen={setOpen} open={open}/> : <NavBarDesktop/> }
+      {hidden ? <NavBarMobile setOpen={setOpen} open={open}/> : <NavBarDesktop /> }
     </>
 
   )

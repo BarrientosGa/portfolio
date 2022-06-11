@@ -3,7 +3,6 @@ import { useStyles } from '../styles/navBarStyles';
 import { Box, AppBar, Toolbar, Typography, Button, Link } from '@mui/material';
 
 const NavBarDesktop = () => {
-
     const classes = useStyles()
 
     return (
@@ -16,12 +15,12 @@ const NavBarDesktop = () => {
                         </Typography>
                     </Box>
                     <Box className={classes.boxButtonNav}>
-                        {['Inicio', 'Tecnologías', 'Proyectos'].map((text, index) => (
-                            <Link href={`#${text.toLowerCase()}`} key={index} sx={{ textDecoration: 'none' }}>
-                                <Button>
-                                    {text}
-                                </Button>
-                            </Link>
+                        {['inicio', 'tecnologías', 'proyectos'].map((text, index) => (
+                            /*  <Link href={`#${text.toLowerCase()}`} key={index} sx={{ textDecoration: 'none' }}> */
+                            <Button>
+                                {text}
+                            </Button>
+                            /*      </Link> */
                         ))}
                     </Box>
                 </Toolbar>
