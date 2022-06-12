@@ -19,7 +19,7 @@ const projects = [
     id: 2,
     img: './menuDePlatos.png',
     title: 'Challenge Alkemy | Menu de platos',
-    description: `El desafió consta en realizar un menu de comida. Donde solo debía haber 4 platos, 2 veganos y 2 no veganos. 
+    description: `En esta app podrás armar tu propio menu de comida. Donde solo podes agregar 4 platos, 2 veganos y 2 no veganos. 
                   Ademas al ir agregando cada plato, se muestra en pantalla los datos del menu, asi como: Precio total, Promedio 
                   total de preparación y El puntaje de salud.`,
     linkRepo: 'https://github.com/BarrientosGa/challenger-alkemy.git'

@@ -20,6 +20,6 @@ export const useStyles = makeStyles({
     },
     card_description: {
         fontSize: '15px !important', 
-        marginTop: '20px !important'
+        //marginTop: '20px !important',
     }
 })

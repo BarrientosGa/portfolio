@@ -1,6 +1,6 @@
 import React from 'react'
 import { useStyles } from '../styles/projectsStyles'
-import { Typography, Card, CardContent, CardActions, Button, CardMedia } from '@mui/material'
+import { Typography, Card, CardContent, CardActions, Button, CardMedia} from '@mui/material'
 
 const CardProject = ({ img, title, description, linkRepo }) => {
 
@@ -18,10 +18,13 @@ const CardProject = ({ img, title, description, linkRepo }) => {
         <Typography color='primary' className={classes.card_title}>
           {title.toUpperCase()}
         </Typography>
+      </CardContent>
+      <CardContent sx={{height:'35%'}}>
         <Typography component='p' color="secondary" className={classes.card_description}>
           {description}
         </Typography>
       </CardContent>
+
       <CardActions sx={{ justifyContent: 'space-evenly' }}>
         <a href={linkRepo} target='_blank' rel="noreferrer">
           <Button size="small" variant='contained' color='button'>Ver código</Button>

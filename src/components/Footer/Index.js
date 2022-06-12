@@ -1,7 +1,7 @@
 import React from 'react'
 import { useStyles } from './styles/footerStyles'
 import { Box, Toolbar, Typography, useMediaQuery } from '@mui/material'
-import SocialNetworkFloat from '../SocialNetwork/SocialNetworkFloat'
+import SocialNetworkFloat from '../SocialNetwork/Index'
 
 const Footer = () => {
 

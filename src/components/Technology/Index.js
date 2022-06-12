@@ -1,6 +1,6 @@
 import React from 'react'
 import { useStyles } from './styles/technologyStyles'
-import { Grid, Container, Box, Toolbar } from '@mui/material'
+import { Grid, Container, Box, Toolbar} from '@mui/material'
 import { motion } from "framer-motion"
 import DividerComp from '../Share/Divider/DividerComp'
 

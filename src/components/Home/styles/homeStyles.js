@@ -16,7 +16,7 @@ export const useStyles = makeStyles((theme) => ({
         marginTop: '60px !important',
         '& p': {
             [theme.breakpoints.only('sm')]: {
-                width: '100%'
+                width: '100%',
             },
         },
     },
