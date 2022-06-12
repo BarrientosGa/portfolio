@@ -64,7 +64,7 @@ const Project = ({current}) => {
   const classes = useStyles()
   
   return (
-    <Box /* id='proyectos' */>
+    <Box id='proyectos'>
       <Toolbar/>
       <DividerComp title='PROJECTOS' />
       <Container>

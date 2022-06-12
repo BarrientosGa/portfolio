@@ -13,9 +13,7 @@ const NavBarMobile = ({ setOpen, open }) => {
       <AppBar position="fixed" color="navBar" sx={{ top: 'auto', bottom: 0 }}>
         <Toolbar>
           <Box>
-            <Typography variant="h6">
-              Logo
-            </Typography>
+            <img src="./logo.png" alt="logo" width={40} height={40} />
           </Box>
           <Box className={classes.boxMenuIcon}>
             <IconButton color="inherit" aria-label="open drawer" onClick={() => setOpen(!open)}>

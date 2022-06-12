@@ -9,7 +9,7 @@ const Home = (props) => {
   const classes = useStyles()
 
   return (
-    <Container>
+    <Container id='inicio'>
         <Grid container className={classes.gridContainer} id="back-to-top-anchor">
           <Grid item lg={5} md={6} sm={8} className={classes.boxText} zeroMinWidth>
             <Typography variant="h3" color="primary" sx={{ marginBottom: '20px' }} >

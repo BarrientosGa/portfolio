@@ -5,11 +5,11 @@ export const useStyles = makeStyles((theme) =>({
         display: 'flex',
     },
     boxButtonNav : {
-        width: '100%',
+        width: '90%',
         display: 'flex',
         justifyContent: 'center',
-        alignItems: "center",
         [theme.breakpoints.down('lg')]: {
+            width: '100%',
             alignItems: 'center'
             
         }
