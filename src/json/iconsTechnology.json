@@ -1,0 +1,30 @@
+[
+    {
+      "id": 1,
+      "urlImg": "./html_5.png"
+    },
+    {
+      "id": 2,
+      "urlImg": "./css-3.png"
+    },
+    {
+      "id": 3,
+      "urlImg": "./js.png"
+    },
+    {
+      "id": 4,
+      "urlImg": "./react.png"
+    },
+    {
+      "id": 5,
+      "urlImg": "./redux.png"
+    },
+    {
+      "id": 6,
+      "urlImg": "./mui.png"
+    },
+    {
+      "id": 7,
+      "urlImg": "./formik.png"
+    }
+  ]
