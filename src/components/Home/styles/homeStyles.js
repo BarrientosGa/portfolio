@@ -15,9 +15,16 @@ export const useStyles = makeStyles((theme) => ({
         //border: '1px solid red',
         marginTop: '60px !important',
         '& p': {
-            [theme.breakpoints.only('sm')]: {
+            [theme.breakpoints.down('md')]: {
                 width: '100%',
+                textAlign:'center'
             },
         },
-    },
+        '& h3': {
+            [theme.breakpoints.down('md')]: {
+                fontSize: '45px',
+                textAlign: 'center'
+            },
+        },
+    }
 }))
