@@ -12,7 +12,7 @@ const Footer = () => {
   return (
     <Box component='footer' className={classes.footer}>
       <SocialNetworkFloat />
-      <Typography component='p' sx={{ marginTop: '30px' }}>
+      <Typography component='p' className={classes.textFooter}>
         &copy; Copyright 2022 | Gabriel Barrientos
       </Typography>
       {hidden && <Toolbar />}

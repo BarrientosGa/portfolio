@@ -10,11 +10,11 @@ const NavBarDesktop = () => {
             <AppBar id='navbar' position="fixed" color='navBar' >
                 <Toolbar>
                     <Box>
-                        <img src="./logo.png" alt="logo" width={40} height={40} />
+                        <img src="./logo.png" alt="logo" className={classes.logoNavBar} />
                     </Box>
                     <Box className={classes.boxButtonNav}>
                         {['inicio', 'tecnologías', 'proyectos'].map((text, index) => (
-                            <Link href={`#${text.toLowerCase()}`} key={index} sx={{ textDecoration: 'none' }}>
+                            <Link href={`#${text.toLowerCase()}`} key={index} sx={{ textDecoration: 'none' }} className={classes.link}>
                                 <Button>
                                     {text}
                                 </Button>

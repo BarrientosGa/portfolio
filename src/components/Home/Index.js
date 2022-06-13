@@ -11,7 +11,7 @@ const Home = (props) => {
   return (
     <Container id='inicio'>
         <Grid container className={classes.gridContainer} id="back-to-top-anchor">
-          <Grid item lg={5} md={6} sm={8} className={classes.boxText} zeroMinWidth>
+          <Grid item xl={6} lg={5} md={6} sm={8} className={classes.boxText} zeroMinWidth>
             <Typography variant="h3" color="primary" sx={{ marginBottom: '20px' }} >
               BIENVENIDO/A👋
             </Typography>

@@ -12,12 +12,13 @@ export const useStyles = makeStyles((theme) =>({
             width: '100%',
             alignItems: 'center'
             
-        }
+        },
     },
     boxMenuIcon : {
         width: '100%',
         display: 'flex',
-        justifyContent: 'flex-end'
+        justifyContent: 'flex-end',
+        
     },
     list:{
         display:'flex', 
@@ -25,9 +26,18 @@ export const useStyles = makeStyles((theme) =>({
         margin: '20px',
     },
     link:{
-        textDecoration: 'none !important'
+        [theme.breakpoints.only('xl')]: {
+            '& button':{
+                fontSize: '18px'
+            }
+        }
     },
-    'MuiPaper-root-MuiDrawer-paper':{
-        backgroundColor:'none'
+    logoNavBar: {
+        width:'40px',
+        height:'40px',
+        [theme.breakpoints.only('xl')]: {
+            width: '55px',
+            height: '55px'
+        }
     }
 }))

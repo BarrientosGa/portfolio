@@ -12,6 +12,15 @@ export const useStyles = makeStyles((theme) => ({
         [theme.breakpoints.down('lg')]: {
             bottom: 85,
             right: 25,
+        },
+        [theme.breakpoints.only('xl')]: {
+            '& button' : {
+                width: '3.125rem',
+                height: '3.125rem'
+            },
+            '& button svg': {
+                fontSize: '2.813rem'
+            }
         }
     }
 }))

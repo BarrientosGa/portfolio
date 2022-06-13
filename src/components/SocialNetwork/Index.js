@@ -27,8 +27,8 @@ const SocialNetworkFloat = () => {
 
     return (
         <Box className={hidden ? classes.box_mobile : classes.box_container }>
-            {redes.map(({ redSocial, link, email }) => (
-                <Link href={link !== undefined ? link : `mailto:${email}`} target='_blank'>
+            {redes.map(({ redSocial, link, email },index) => (
+                <Link href={link !== undefined ? link : `mailto:${email}`} target='_blank' key={index}>
                     {redSocial}
                 </Link>
             ))}

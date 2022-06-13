@@ -1,8 +1,11 @@
 import { makeStyles } from "@mui/styles";
 
-export const useStyles = makeStyles({
+export const useStyles = makeStyles((theme)=>({
     alignTitle: {
         marginTop: '20px !important',
+        [theme.breakpoints.only('xl')]: {
+            fontSize:'50px !important'
+        }
     },
     divider:{
         '&.MuiDivider-root::before , &.MuiDivider-root::after':{
@@ -10,4 +13,4 @@ export const useStyles = makeStyles({
             borderTop: 'thin solid #8e24aa'
         },
     }
-})
+}))

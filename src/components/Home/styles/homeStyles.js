@@ -19,12 +19,18 @@ export const useStyles = makeStyles((theme) => ({
                 width: '100%',
                 textAlign:'center'
             },
+            [theme.breakpoints.only('xl')]: {
+                fontSize: '20px'
+            }
         },
         '& h3': {
             [theme.breakpoints.down('md')]: {
                 fontSize: '45px',
                 textAlign: 'center'
             },
+            [theme.breakpoints.only('xl')]: {
+                fontSize: '60px'
+            }
         },
     }
 }))
