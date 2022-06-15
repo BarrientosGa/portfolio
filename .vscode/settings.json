@@ -11,6 +11,8 @@
         "divider",
         "Divider",
         "drawer",
+        "formik",
+        "Formik",
         "icons",
         "Incept",
         "linkedin",
@@ -20,6 +22,7 @@
         "props",
         "puntaje",
         "styled",
+        "technology",
         "theme",
         "typography",
         "Typography"
