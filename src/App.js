@@ -12,7 +12,7 @@ const App = () => {
 
   return (
     <ThemeProvider theme={theme}>
-      <Box >
+      <Box>
         <NavBar />
         <Home />
         <Technology />

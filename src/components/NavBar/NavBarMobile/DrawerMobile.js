@@ -20,7 +20,7 @@ const DrawerMobile = ({ setOpen, open }) => {
       >
         <List className={classes.list}>
           {['Inicio', 'Tecnologías', 'Proyectos'].map((text, index) => (
-            <Link href={`#${text.toLowerCase()}`} key={index} className={classes.link}>
+            <Link href={`#${text.toLowerCase()}`} key={index} className={classes.link} underline='none'>
               <Button>{text}</Button>
             </Link>
           ))}
