@@ -2,7 +2,7 @@ import React from 'react'
 import {Grid, Box, Toolbar } from '@mui/material'
 import CardProject from './Card/CardProject'
 import DividerComp from '../Share/Divider/DividerComp'
-import project from '../../json/project.json'
+import project from '../../data/project.json'
 
 const Project = () => {
 

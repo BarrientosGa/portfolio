@@ -2,7 +2,7 @@ import React from 'react'
 import { useStyles } from './styles/technologyStyles'
 import { Grid, Container, Box, Toolbar, Paper, Typography } from '@mui/material'
 import DividerComp from '../Share/Divider/DividerComp'
-import { technology } from '../../json/technology'
+import { technology } from '../../data/technology'
 
 const Technology = () => {
 
