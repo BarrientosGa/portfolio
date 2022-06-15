@@ -1,6 +1,6 @@
-import React, { useEffect, useRef } from 'react'
+import React from 'react'
 import { useStyles } from '../styles/navBarStyles';
-import { Box, AppBar, Toolbar, Typography, Button, Link } from '@mui/material';
+import { Box, AppBar, Toolbar, Button, Link } from '@mui/material';
 
 const NavBarDesktop = () => {
     const classes = useStyles()

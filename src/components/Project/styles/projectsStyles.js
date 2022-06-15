@@ -1,42 +1,34 @@
 import { makeStyles } from "@mui/styles";
 
-export const useStyles = makeStyles((theme) =>({
-    alignTitle: {
-        textAlign: 'center',
-        marginTop: '80px !important'
-    },
-    gridContainer: {
-        marginTop: '25px !important',
-    },
-    card:{ 
-        maxWidth:'345px', 
-        display:'flex', 
-        flexDirection:'column',
-        height: '100%', 
-        background: '#010312 !important', 
-        boxShadow: '#3c0087 7px 3px 20px !important', 
-        borderRadius: '0px !important',
+export const useStyles = makeStyles((theme) => ({
+    card: {
+        '&.MuiCard-root': {
+            maxWidth: '345px',
+            display: 'flex',
+            flexDirection: 'column',
+            height: '100%',
+            background: '#010312',
+            boxShadow: '#3c0087 7px 3px 20px',
+            borderRadius: '0px',
+        }
     },
     card_title: {
-        fontSize: '1.063rem !important', 
-        textAlign: 'center',
-        fontWeight: 'bold !important',
-        [theme.breakpoints.only('xl')]: {
-            fontSize: '1.125rem !important'
+        '&.MuiTypography-root': {
+            fontSize: '1.063rem',
+            textAlign: 'center',
+            fontWeight: 'bold',
+            [theme.breakpoints.only('xl')]: {
+                fontSize: '1.125rem'
+            }
         }
-
     },
     card_description: {
-        fontSize: '15px !important', 
-        [theme.breakpoints.only('xl')]: {
-            fontSize: '17px !important'
+        '&.MuiTypography-root': {
+            fontSize: '15px',
+            textAlign: 'start',
+            [theme.breakpoints.only('xl')]: {
+                fontSize: '17px'
+            }
         }
     },
-    prueba:{
-        paddingLeft:'80px',
-        paddingRight: '80px',
-        [theme.breakpoints.down('lg')]:{
-
-        }
-    }
 }))

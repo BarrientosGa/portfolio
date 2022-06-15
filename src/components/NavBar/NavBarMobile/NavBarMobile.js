@@ -1,5 +1,5 @@
 import React from 'react'
-import { AppBar, Toolbar, IconButton, Box, Typography } from '@mui/material';
+import { AppBar, Toolbar, IconButton, Box } from '@mui/material';
 import MenuIcon from '@mui/icons-material/Menu';
 import { useStyles } from '../styles/navBarStyles';
 import DrawerMobile from './DrawerMobile';

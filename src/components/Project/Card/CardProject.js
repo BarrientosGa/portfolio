@@ -1,6 +1,6 @@
 import React from 'react'
 import { useStyles } from '../styles/projectsStyles'
-import { Typography, Card, CardContent, CardActions, Button, CardMedia, Link, Box } from '@mui/material'
+import { Typography, Card, CardContent, CardActions, Button, CardMedia, Link} from '@mui/material'
 
 const CardProject = ({ img, title, description, linkRepo, linkWeb }) => {
 
@@ -20,7 +20,7 @@ const CardProject = ({ img, title, description, linkRepo, linkWeb }) => {
           </Typography>
         </CardContent>
         <CardContent sx={{ height: '35%' }}>
-          <Typography component='p' variant='body2' align='start' color="secondary" className={classes.card_description}>
+          <Typography component='p' variant='body2' color="secondary" className={classes.card_description}>
             {description}
           </Typography>
         </CardContent>

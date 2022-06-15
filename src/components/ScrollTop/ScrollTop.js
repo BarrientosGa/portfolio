@@ -1,5 +1,5 @@
 import React from 'react'
-import { Box, Fade, Toolbar, useScrollTrigger } from '@mui/material';
+import { Box, Fade, useScrollTrigger } from '@mui/material';
 import { useStyles } from './styles/scrollTopStyle';
 
 const ScrollTop = (props) => {

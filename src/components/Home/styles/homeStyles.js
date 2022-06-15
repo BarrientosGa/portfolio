@@ -12,12 +12,11 @@ export const useStyles = makeStyles((theme) => ({
         marginTop: '40px',
     },
     boxText: {
-        //border: '1px solid red',
         marginTop: '60px !important',
         '& p': {
             [theme.breakpoints.down('md')]: {
                 width: '100%',
-                textAlign:'center'
+                textAlign: 'center'
             },
             [theme.breakpoints.only('xl')]: {
                 fontSize: '20px'

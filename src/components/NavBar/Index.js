@@ -1,6 +1,5 @@
 import { useMediaQuery } from '@mui/material';
-import React from 'react'
-import { useState } from 'react';
+import React, { useState } from 'react'
 import NavBarDesktop from './NavBarDesktop/NavBarDesktop'
 import NavBarMobile from './NavBarMobile/NavBarMobile'
 
