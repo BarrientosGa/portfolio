@@ -10,7 +10,7 @@ const Project = () => {
     <>
       <Box id='proyectos'>
         <Toolbar />
-        <DividerComp title='PROJECTOS' />
+        <DividerComp title='PROYECTOS' />
       </Box>
       <Grid container rowSpacing={5} sx={{ marginTop: '10px' }}>
         {project.map(({ id, ...props }) => (

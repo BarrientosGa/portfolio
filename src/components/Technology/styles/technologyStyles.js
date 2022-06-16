@@ -28,6 +28,11 @@ export const useStyles = makeStyles((theme) => ({
             fontWeight: 'bold',
             fontSize: '1.25rem',
             marginLeft: '10px'
+        },
+        [theme.breakpoints.down('440')]: {
+            '&.MuiTypography-root': {
+                fontSize: '0.938rem'
+            },
         }
     }
 }))
