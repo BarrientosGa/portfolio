@@ -12,5 +12,10 @@ export const useStyles = makeStyles((theme)=>({
             margin: '35px',
             borderTop: 'thin solid #8e24aa'
         },
+        [theme.breakpoints.down('440')]: {
+            '&.MuiDivider-root::before , &.MuiDivider-root::after':{
+                margin: '10px',
+            },
+        }
     }
 }))
